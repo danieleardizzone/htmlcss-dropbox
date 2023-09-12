@@ -87,6 +87,10 @@ button{
     flex-basis: calc((100%/12)*4);
 }
 
+.col-6{
+    flex-basis: calc((100%/12)*6); 
+}
+
 .col-8{
     flex-basis: calc((100%/12)*8);
 }
@@ -240,6 +244,83 @@ h3{
     justify-content: space-around;
 }
 
+.our-company .col{
+    flex-wrap: wrap;
+}
+
+.col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    max-width: 320px;
+    aspect-ratio: 1;
+}
+
+.col-6 img{
+    filter: invert(1);
+}
+
+.designit{
+    background-color: #A2D39B;
+}
+
+.arizona{
+    background-color: #61082B;
+}
+
+.florida{
+    background-color: #0093CE;
+}
+
+.topps{
+    background-color: #FF1C1C;
+}
+
+.bicycle{
+    background-color: #D5001F;
+}
+
+.hearst{
+    background-color: #B4D0E7;
+}
+
+.lonely{
+    background-color: #0D2481;
+}
+
+.clear{
+    background-color: #FFD830;
+}
+
+.our-company_body img{
+    max-width: 300px;
+}
+
+.our-company_body>*{
+    padding: 30px;
+}
+
+.free-trial{
+    background-color: #B4D0E7;
+}
+
+.free-trial .row{
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 100px 0;
+}
+
+.free-trial .white-button{
+    border: none;
+}
+
+.free-trial h2{
+    color: #61082B;
+}
+
+
+
 /*DEBUG*/
 
 .debug .big-container{
@@ -259,6 +340,11 @@ h3{
 
 .debug .col{
     border: 1px solid blue;
+    padding: 20px;
+}
+
+.debug .col-6{
+    border: 1px solid yellow;
     padding: 20px;
 }
 
