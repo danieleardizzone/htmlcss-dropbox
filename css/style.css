@@ -6,6 +6,7 @@
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 ul,
@@ -15,7 +16,7 @@ ol{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .big-container{
@@ -48,14 +49,19 @@ a{
 }
 
 button{
-    padding: 5px 15px;
-    border: none;
+    padding: 7px 17px;
     width: fit-content;
+    font-size: 16px;
 }
 
 .blue-button{
     background-color: #0061FF;
     color: white;
+    border: none;
+}
+
+.white-button{
+    background-attachment: white;
 }
 
 .page-header .row{
@@ -65,7 +71,7 @@ button{
 .page-header .col{
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .page-header ul{
@@ -83,6 +89,10 @@ button{
 
 .col-8{
     flex-basis: calc((100%/12)*8);
+}
+
+.col-12{
+    flex-basis: calc((100%/12)*12);
 }
 
 .hero{
@@ -114,15 +124,11 @@ button{
     padding-top: 80px;
 }
 
-.plans .container{
-
-}
-
 .plans .title{
     padding: 50px 0;
 }
 
-.plans h2{
+h2{
     font-size: 40px;
     padding-bottom: 50px;
 }
@@ -141,8 +147,8 @@ button{
 }
 
 .plans div[class^="card-"]{
-    padding: 20px;
-    border: 1px solid gray;
+    padding: 0 20px;
+    border: 1px solid #E6E6E7;
 }
 
 .plans .card-title{
@@ -155,26 +161,93 @@ button{
     justify-content: space-between;
 }
 
-.plans div[class^="card-body_"]{
+.plans .card-body > div{
     border: none;
+    padding: 20px 0;
 }
 
-.plans a{
+.plan-price{
+    font-weight: 700;
+}
+
+.plan-price-specs{
+    color: #E6E6E7;
+}
+
+.plans .card-body_button{
+    display: flex;
+    align-self: center;
+}
+
+.plans a,
+.our-costumers a{
     color: blue;
     text-decoration: underline;
 }
 
 .plans .card-foot_title{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
 }
 
+.card-body_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+#big-card-body{
+    border: none;
+}
 
+.img-txt .col-4{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-txt .col-4>*:not(button){
+    padding: 15px 0;
+}
+
+.img-txt .row{
+    gap: 50px;
+}
+
+.img-txt .small-container{
+    padding: 100px 0;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.grid-topic .col-4{
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.grid-topic .row{
+    gap: 50px;
+}
+.our-costumers .row{
+    padding: 200px 0;
+}
+
+.our-costumers .row{
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 /*DEBUG*/
 
 .debug .big-container{
+    background-color: green;
+    padding: 20px;
+}
+
+.debug .small-container{
     background-color: green;
     padding: 20px;
 }
