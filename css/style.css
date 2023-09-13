@@ -56,9 +56,10 @@ h2{
 
 
 button{
-    padding: 7px 17px;
+    padding: 7px 14px;
     width: fit-content;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .blue-button{
@@ -143,21 +144,59 @@ button{
     row-gap: 50px;
 }
 
-.plans-list {
-
+.card{
+    border: 1px solid #DBDBDD;
 }
 
 .col .card {
 	height: 100%;
 }
-
 .plans .col{
-
-    border: 1px solid #E6E6E7;
-    
+    padding: 0 25px;
 }
 
+.card .card-header {
+    border-bottom: 1px solid #DBDBDD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
 
+.card .card-body {
+    padding: 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.features-item {
+   display: flex;
+   align-items: baseline;
+   gap: 10px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.big-card .row{
+    flex-wrap: nowrap;
+	gap: 50px;
+    align-items: baseline;
+}
+
+#col-12_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title-group{
+    margin-bottom: 50px;
+}
+
+.blue-icons i{
+    color: #0061FF;
+}
 
 /*.plans .title{
     padding: 50px 0;
@@ -346,6 +385,62 @@ h3{
     color: #61082B;
 }
 
+.faq .row{
+    flex-direction: column;
+}
+
+.faq .col{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #DBDBDD;
+    border-bottom: 1px solid #DBDBDD;
+    padding: 50px 0;
+}
+
+.faq .questions{
+    font-weight: 700;
+}
+
+.faq .icons{
+    padding-right: 50px;
+}
+
+.faq h2{
+    padding-top: 50px;
+}
+
+.page-footer{
+    background-color: black;
+    color: white;
+}
+
+.page-footer .row{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-footer .col{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.page-footer .footer-list-title{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2.5em;
+}
+
+.page-footer .footer-list-item{
+    line-height: 3em;
+}
+
+.language{
+    padding: 50px 0;
+}
 
 
 /*DEBUG*/
