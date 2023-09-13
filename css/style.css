@@ -48,6 +48,13 @@ a{
     text-decoration: none;
 }
 
+
+h2{
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+
 button{
     padding: 7px 17px;
     width: fit-content;
@@ -128,13 +135,32 @@ button{
     padding-top: 80px;
 }
 
-.plans .title{
-    padding: 50px 0;
+/* PLANS*/
+
+.plans .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
 }
 
-h2{
-    font-size: 40px;
-    padding-bottom: 50px;
+.plans-list {
+
+}
+
+.col .card {
+	height: 100%;
+}
+
+.plans .col{
+
+    border: 1px solid #E6E6E7;
+    
+}
+
+
+
+/*.plans .title{
+    padding: 50px 0;
 }
 
 .plans .radio{
@@ -202,7 +228,9 @@ h2{
 
 #big-card-body{
     border: none;
-}
+}*/
+
+/*FINE PLANS*/
 
 .img-txt .col-4{
     flex-direction: column;
@@ -252,13 +280,12 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 45px;
-    max-width: 320px;
     aspect-ratio: 1;
 }
 
 .col-6 img{
     filter: invert(1);
+    max-width: 50%;
 }
 
 .designit{
